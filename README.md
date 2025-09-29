@@ -77,7 +77,7 @@ ORDER BY total_revenue DESC;
 
 
 <img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/72a9288b-eaf5-485d-a1c3-7fdbe94386e4" />
-### moving average
+### moving   average
 WITH monthly_sales AS (
   SELECT
     TRUNC(sale_date, 'MM') AS month_start,
