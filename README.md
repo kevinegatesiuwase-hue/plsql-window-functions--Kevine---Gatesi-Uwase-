@@ -163,7 +163,7 @@ ORDER BY month_start;
 
 .Implement monthly monitoring dashboard using these window queries; trigger alerts when MoM drop > 15%.
 
-### REFERENCES
+### STEP 6: REFERENCES
 1.Oracle Corporation. (2024). Oracle Database PL/SQL Language Reference: Analytic Functions. Oracle Documentation. Retrieved from https://docs.oracle.com/en/database/oracle/oracle-database/
 
 2.Oracle Corporation. (2024). SQL Language Reference: Window Functions Overview. Oracle Database Documentation. Retrieved from https://docs.oracle.com/en/database/oracle/oracle-database/
