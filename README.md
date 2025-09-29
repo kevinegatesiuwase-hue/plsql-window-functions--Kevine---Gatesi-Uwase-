@@ -141,3 +141,26 @@ SELECT
 FROM monthly_sales
 ORDER BY month_start;
 <img width="1920" height="1080" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/870d0394-08c7-4a35-994c-2aed759eda5b" />
+## STEP 5: RESULTS ANALYSIS
+### DESCRIPTIVE
+.Top 5 products per region-quarter: Product A, B, C dominate Kigali in Q2; total revenue in Kigali Q2 = 2,450,000 RWF.
+
+.Monthly trend: Sales peaked in July 2025 and dipped in June 2025; moving average confirms upward trend into Q3.
+
+.Customer quartiles: Top quartile (25% customers) contribute ~62% of revenue.
+
+### Diagnostic
+.Q3 peak correlates with marketing campaign launched July 1 and introduction of a new seasonal blend (product promotion).
+
+.High concentration in top quartile indicates dependency on a few loyal customers and potential risk if churn occurs.
+
+.Lower performing regions show product-stockouts or limited product mix (inventory constraint).
+
+### Prescriptive
+.Target top-quartile customers with loyalty offers to preserve revenue; create a “win-back” campaign for 2nd quartile customers.
+
+.Reallocate inventory and promotional budget to top-performing product-region pairs seen in ranking queries.
+
+.Implement monthly monitoring dashboard using these window queries; trigger alerts when MoM drop > 15%.
+
+
