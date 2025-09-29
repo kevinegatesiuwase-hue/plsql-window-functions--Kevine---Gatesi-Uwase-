@@ -39,6 +39,7 @@ ORDER BY month_start;
 <img width="1920" height="1080" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/44215f8e-8c50-4397-8986-14350cd55761" />
 ### navigation  
 
+
 WITH monthly_sales AS (
   SELECT
     TRUNC(sale_date, 'MM') AS month_start,
@@ -59,6 +60,8 @@ FROM monthly_sales
 ORDER BY month_start;
 <img width="1920" height="1080" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/f843f75d-f905-44b1-9932-b11284545036" />
 ### Distribution
+
+
 WITH customer_revenue AS (
   SELECT
     c.customer_id,
@@ -80,6 +83,7 @@ ORDER BY total_revenue DESC;
 
 <img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/72a9288b-eaf5-485d-a1c3-7fdbe94386e4" />
 ### moving  average
+
 WITH monthly_sales AS (
   SELECT
     TRUNC(sale_date, 'MM') AS month_start,
