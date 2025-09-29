@@ -18,9 +18,7 @@ Generate reports and insights (e.g., top products, monthly revenue, loyal custom
 
 Improve decision-making based on real-time information
 
-Business Value:
 
-With this database in place, the company will be able to streamline sales operations, increase marketing effectiveness, improve inventory planning, and make better business decisions based on accurate data analytics.
 ## step 3: Database Schema
 | **Table**        | **Purpose**                   | **Key Columns**                                                                                       | **Example Row**                               |
 | ---------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
