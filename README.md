@@ -77,3 +77,24 @@ ORDER BY total_revenue DESC;
 
 
 <img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/72a9288b-eaf5-485d-a1c3-7fdbe94386e4" />
+### moving average
+WITH monthly_sales AS (
+  SELECT
+    TRUNC(sale_date, 'MM') AS month_start,
+    SUM(amount) AS monthly_revenue
+  FROM transactions
+  GROUP BY TRUNC(sale_date, 'MM')
+)
+SELECT
+  month_start,
+  monthly_revenue,
+  ROUND(
+    AVG(monthly_revenue) OVER (
+      ORDER BY month_start 
+      ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+    ), 
+    2
+  ) AS moving_avg_3_months
+FROM monthly_sales
+ORDER BY month_start;
+<img width="1920" height="1080" alt="Screenshot (45)" src="https://github.com/user-attachments/assets/870d0394-08c7-4a35-994c-2aed759eda5b" />
