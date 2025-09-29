@@ -8,6 +8,8 @@
 | **transactions** | Record sales transactions     | `transaction_id (PK)`, `customer_id (FK)`, `product_id (FK)`, `seller_id (FK)`, `sale_date`, `amount` | **3001**, 1001, 2001, 4001, 2024-01-15, 25000 |
 ### ER DIAGRAM
 
+<img width="1920" height="1080" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/44944ca6-5efd-424b-b251-e9d08e649f0b" />
+
 ## step 4: Window Functions implementation
 ### ranking
 SELECT
