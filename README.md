@@ -36,3 +36,24 @@ FROM monthly_sales
 ORDER BY month_start;
 
 <img width="1920" height="1080" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/44215f8e-8c50-4397-8986-14350cd55761" />
+### navigation
+WITH monthly_sales AS (
+  SELECT
+    TRUNC(sale_date, 'MM') AS month_start,
+    SUM(amount) AS monthly_revenue
+  FROM transactions
+  GROUP BY TRUNC(sale_date, 'MM')
+)
+SELECT
+  month_start,
+  monthly_revenue,
+  LAG(monthly_revenue) OVER (ORDER BY month_start) AS prev_month,
+  ROUND(
+    (monthly_revenue - LAG(monthly_revenue) OVER (ORDER BY month_start)) 
+    / NULLIF(LAG(monthly_revenue) OVER (ORDER BY month_start), 0) * 100, 
+    2
+  ) AS growth_percent
+FROM monthly_sales
+ORDER BY month_start;
+<img width="1920" height="1080" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/f843f75d-f905-44b1-9932-b11284545036" />
+
