@@ -1,4 +1,13 @@
 # plsql-window-functions--Kevine---Gatesi-Uwase-
+## step 3: Database Schema
+| **Table**        | **Purpose**                   | **Key Columns**                                                                                       | **Example Row**                               |
+| ---------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| **customers**    | Store customer information    | `customer_id (PK)`, `name`, `region`                                                                  | **1001**, John Doe, Kigali                    |
+| **products**     | Store product catalog details | `product_id (PK)`, `name`, `category`                                                                 | **2001**, Coffee Beans, Beverages             |
+| **sellers**      | Store seller/employee info    | `seller_id (PK)`, `name`, `store_location`                                                            | **4001**, Grace Umutoni, Kigali Mall          |
+| **transactions** | Record sales transactions     | `transaction_id (PK)`, `customer_id (FK)`, `product_id (FK)`, `seller_id (FK)`, `sale_date`, `amount` | **3001**, 1001, 2001, 4001, 2024-01-15, 25000 |
+### ER DIAGRAM
+
 ## step 4: Window Functions implementation
 ### ranking
 SELECT
