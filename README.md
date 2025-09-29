@@ -165,12 +165,21 @@ ORDER BY month_start;
 
 ### REFERENCES
 1.Oracle Corporation. (2024). Oracle Database PL/SQL Language Reference: Analytic Functions. Oracle Documentation. Retrieved from https://docs.oracle.com/en/database/oracle/oracle-database/
+
 2.Oracle Corporation. (2024). SQL Language Reference: Window Functions Overview. Oracle Database Documentation. Retrieved from https://docs.oracle.com/en/database/oracle/oracle-database/
+
 3.Oracle Corporation. (2024). Database SQL Tuning Guide: Using Window Functions for Analytics. Oracle Help Center. Retrieved from https://docs.oracle.com/en/database/oracle/oracle-database/
+
 4.Oracle Learning Library. (2024). Advanced Analytics with SQL Window Functions. Oracle Database Tutorials. Retrieved from https://www.oracle.com/database/technologies/
+
 5.Mode Analytics. (2024). SQL Window Functions Tutorial: Practical Examples and Use Cases. Mode SQL Tutorial. Retrieved from https://mode.com/sql-tutorial/
+
 6.PostgreSQL Global Development Group. (2024). Window Functions in PostgreSQL. PostgreSQL Documentation. Retrieved from https://www.postgresql.org/docs/
+
 7.Leis, V., Kundhikanjana, W., & Kemper, A. (2015). The Complete Story of Window Functions in SQL. Proceedings of the VLDB Endowment, 8(12), 1244-1255.
+
 8.Ramakrishnan, R., & Gehrke, J. (2003). Database Management Systems (3rd ed.). McGraw-Hill Education. Chapter 5: Advanced SQL Queries and Window Functions.
+
 9.Kimball, R., & Ross, M. (2013). The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling (3rd ed.). Wiley. Chapter 10: Analytics and Window Functions.
+
 10.MicroStrategy. (2024). Business Intelligence Best Practices: Using Window Functions for Customer Segmentation. MicroStrategy Documentation. Retrieved from https://www.microstrategy.com/
