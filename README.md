@@ -1,12 +1,15 @@
 # plsql-window-functions--Kevine---Gatesi-Uwase-
 ## STEP 1:PROBLEM DEFINITION
 Business Context:
+
 We are developing a Sales Management Database System for a retail company that sells different products to customers through various sellers across multiple regions. The company deals with hundreds of transactions every month, but all sales data is currently scattered in spreadsheets and manual reports, making it difficult to track performance and make data-driven decisions.
 
 Data Challenge:
+
 The main challenge is that the company cannot easily analyze its sales performance, identify its best-selling products, track customer purchasing behavior, or evaluate seller performance. Without a centralized database, generating sales reports, calculating revenue growth, or segmenting customers becomes time-consuming and error-prone.
 
 Expected Outcome:
+
 The goal is to design a relational database that stores all important business data — including customer details, product information, seller records, and transaction history — in one organized system. This database will enable the company to:
 
 Quickly access accurate sales data
@@ -16,6 +19,7 @@ Generate reports and insights (e.g., top products, monthly revenue, loyal custom
 Improve decision-making based on real-time information
 
 Business Value:
+
 With this database in place, the company will be able to streamline sales operations, increase marketing effectiveness, improve inventory planning, and make better business decisions based on accurate data analytics.
 ## step 3: Database Schema
 | **Table**        | **Purpose**                   | **Key Columns**                                                                                       | **Example Row**                               |
