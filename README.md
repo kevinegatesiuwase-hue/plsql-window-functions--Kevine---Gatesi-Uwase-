@@ -56,4 +56,24 @@ SELECT
 FROM monthly_sales
 ORDER BY month_start;
 <img width="1920" height="1080" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/f843f75d-f905-44b1-9932-b11284545036" />
+### Distribution
+WITH customer_revenue AS (
+  SELECT
+    c.customer_id,
+    c.cust_name,
+    SUM(t.amount) AS total_revenue
+  FROM customers c
+  LEFT JOIN transactions t ON c.customer_id = t.customer_id
+  GROUP BY c.customer_id, c.cust_name
+)
+SELECT
+  customer_id,
+  cust_name,
+  total_revenue,
+  NTILE(4) OVER (ORDER BY total_revenue DESC) AS revenue_quartile,
+  CUME_DIST() OVER (ORDER BY total_revenue DESC) AS cumulative_distribution
+FROM customer_revenue
+ORDER BY total_revenue DESC;
 
+
+<img width="1920" height="1080" alt="Screenshot (43)" src="https://github.com/user-attachments/assets/72a9288b-eaf5-485d-a1c3-7fdbe94386e4" />
